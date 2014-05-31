@@ -1,0 +1,40 @@
+
+now (6/1/2014, 2:45am):
+ - projects are modeled, displayed via template
+ - show/hide implemented
+
+
+
+next steps:
+
+allow addition of projects
+ - user can add a project
+ - it persists in this session
+ - user can submit project to moderator
+ - user can edit project
+ - edits persist
+ - user submits project to moderator
+ - user must give email!  to authenticate future edit/delete requests
+
+allow editing of projects (belonging to user)
+
+allow searching of projects
+ - filters (key, value+count)
+ - search bar
+
+create authentication scheme
+
+figure out how to create nested objects/arrays in my data model
+
+figure out admin interface
+ - simple: add "approved" bool to data model
+  - when admin is logged in, he will be shown an option to view unapproved projects
+  - each project will have approve/trash buttons in admin view
+
+
+build server/database
+ - try just Node, mongo
+
+
+CSS! use foundation to prettify site
+

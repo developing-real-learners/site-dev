@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Ember.js • TodoMVC</title>
+    <link rel="stylesheet" href="style.css">
+	
+
+<script type="text/javascript">
+//a script to expand/contract projects
+//figure out a more emberific way to do this later
+function showHide(shID) {
+   if (document.getElementById(shID+'-more')) {
+      if (document.getElementById(shID+'-show').style.display != 'none') {
+         document.getElementById(shID+'-show').style.display = 'none';
+         document.getElementById(shID+'-more').style.display = 'block';
+      }
+      else {
+         document.getElementById(shID+'-show').style.display = 'inline';
+         document.getElementById(shID+'-more').style.display = 'none';
+      }
+   }
+}
+</script>
+
+	
+	
+  </head>
+  <body>
+  
+  
+    <header id="projects">
+		<h1>Projects</h1>
+	</header>
+
+	
+	  <script type="text/x-handlebars" data-template-name="projects">
+		{{#each itemController="project"}}
+	
+		<article>
+		<header>
+			<img class="project_icon" src="book_icon.png" alt="Project Icon"</img>
+			<h2>Title: {{title}}</h2>
+		</header>
+		<p>Summary: {{summary}}</p>
+		{{#if isHidden}}
+			<a href="" {{action "showDetails"}}>(Show details)</a>
+		{{else}}
+			<a href="" {{action "hideDetails"}}>(Hide details)</a>
+		{{/if}}
+		<div {{bind-attr class="isHidden:hidden:unhidden" }}>
+			{{#if country}}<p>Country: {{country}}</p>{{/if}}
+			{{#if org}}<p>School/Organization Name: {{org}}</p>{{/if}}
+			{{#if start}}<p>Start Date: {{start}}</p>{{/if}}
+			{{#if end}}<p>End Date: {{end}}</p>{{/if}}
+			{{#if website}}<p>Website: <a href="http://link.url">{{website}}</a>{{/if}}
+			{{#if contact}}<p>Contact: {{contact}}</p>{{/if}}
+			{{#if description}}<p>Description: {{description}}</p>{{/if}}
+			{{#if media}}<p>Media Gallery:</p>
+				{{media}}		{{/if}}
+			{{#if resources}}<p>Resources: {{resources}}</p>{{/if}}
+			{{#if admin}}<p>Administrator: {{admin}}</p>{{/if}}
+			{{#if users}}<p>Users: {{users}}</p>{{/if}}
+			<p><a href="" {{action "hideDetails"}}>(Hide details)</a>
+		</div>
+		</article>
+		{{/each}}
+		<article class="new-project">
+			<header>
+				<img class="project_icon" src="book_icon.png" alt="Project Icon"</img>
+				<h2 {{action "createProject"}} id="new">+ Add New Project</h2>
+			</header>
+			<div {{bind-attr class="isHidden:unhidden:hidden" }}>
+			
+			<p><a href="" {{action "hideDetails"}}>(Hide details)</a>
+		</div>
+		</article>
+  
+  </script>
+  
+  
+
+  <script src="js/libs/jquery-1.10.2.js"></script>
+  <script src="js/libs/handlebars-1.1.2.js"></script>
+  <script src="js/libs/ember-1.5.1.js"></script>
+  <script src="js/libs/ember-data.js"></script>
+  <script src="js/libs/localstorage_adapter.js"></script>
+  <script src="js/application.js"></script>
+  <script src="js/router.js"></script>
+  <script src="js/models/project.js"></script>
+  <script src="js/controllers/projects_controller.js"></script>
+  <script src="js/controllers/project_controller.js"></script>
+  
+
+  </body>
+</html>
