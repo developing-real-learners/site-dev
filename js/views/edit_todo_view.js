@@ -9,3 +9,5 @@ Todos.EditTodoView = Ember.TextField.extend({
 
 //creates a custom Handlebars component called "edit-todo"
 Ember.Handlebars.helper('edit-todo', Todos.EditTodoView);
+
+

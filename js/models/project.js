@@ -3,8 +3,8 @@ Projects.Project = DS.Model.extend({
    summary: DS.attr('string'),
    country: DS.attr('string'),
    org: DS.attr('string'),
-   start: DS.attr('string'),
-   end: DS.attr('string'),
+   start: DS.attr('date'),
+   end: DS.attr('date'),
    website: DS.attr('string'),
    contact: DS.attr('contact'),
    description: DS.attr('string'),
@@ -12,8 +12,14 @@ Projects.Project = DS.Model.extend({
    resources: DS.attr('string'),
    admin: DS.attr('string'),
    users: DS.attr('string'),
+   tags: DS.hasMany('tag', {async: true})
 });
 
+Projects.Tag = DS.Model.extend({
+	title: DS.attr('string')
+});
+
+Projects.Tag.FIXTURES = [{id: 1, title: 'design'}, {id: 2, title: 'IT'}, {id: 3, title: 'French'}, {id: 4, title: 'language'}];
 
 //sample data for testing and development
 //see also: http://emberjs.com/guides/models/the-fixture-adapter/
@@ -32,7 +38,8 @@ Projects.Project.FIXTURES = [
    media: 'image1.jpg',
    resources: 'Learner Profile',
    admin: 'Robert Thorn',
-   users: 'rthorn'
+   users: 'rthorn',
+   tags: ''
  },
  
  {
@@ -49,7 +56,8 @@ Projects.Project.FIXTURES = [
    media: 'image2.jpg',
    resources: 'Learner Profile',
    admin: 'Ali Abbas',
-   users: 'Aliab, MIbrahimi'
+   users: 'Aliab, MIbrahimi',
+   tags: [1, 2]
  },
  {
    id: 3,
@@ -69,7 +77,8 @@ Projects.Project.FIXTURES = [
    media: 'image3.jpg',
    resources: 'Learner Profile',
    admin: 'Pierre Lefranc',
-   users: 'plefranc, jcousteau'
+   users: 'plefranc, jcousteau',
+   tags: [3,4]
  }
 ];
 

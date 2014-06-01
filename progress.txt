@@ -16,6 +16,13 @@ allow addition of projects
  - user submits project to moderator
  - user must give email!  to authenticate future edit/delete requests
 
+ + add tags to project data
+
+ - create multiple values for members, resources, media fields
+   - based on tags
+
+
+
 allow editing of projects (belonging to user)
 
 allow searching of projects
@@ -24,7 +31,8 @@ allow searching of projects
 
 create authentication scheme
 
-figure out how to create nested objects/arrays in my data model
+ + figure out how to create nested objects/arrays in my data model
+
 
 figure out admin interface
  - simple: add "approved" bool to data model

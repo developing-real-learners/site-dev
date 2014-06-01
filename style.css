@@ -459,3 +459,15 @@ h2{
 	margin-left:110px;
 }
 
+.comma-list:after {
+    content: ', ';	
+}
+
+.comma-list:last-of-type:after {
+    content:'';
+}
+
+
+
+
+

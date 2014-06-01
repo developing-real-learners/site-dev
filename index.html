@@ -2,27 +2,8 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Ember.js • TodoMVC</title>
+    <title>Developing Real Learners | Projects</title>
     <link rel="stylesheet" href="style.css">
-	
-
-<script type="text/javascript">
-//a script to expand/contract projects
-//figure out a more emberific way to do this later
-function showHide(shID) {
-   if (document.getElementById(shID+'-more')) {
-      if (document.getElementById(shID+'-show').style.display != 'none') {
-         document.getElementById(shID+'-show').style.display = 'none';
-         document.getElementById(shID+'-more').style.display = 'block';
-      }
-      else {
-         document.getElementById(shID+'-show').style.display = 'inline';
-         document.getElementById(shID+'-more').style.display = 'none';
-      }
-   }
-}
-</script>
-
 	
 	
   </head>
@@ -49,7 +30,7 @@ function showHide(shID) {
 			<a href="" {{action "hideDetails"}}>(Hide details)</a>
 		{{/if}}
 		<div {{bind-attr class="isHidden:hidden:unhidden" }}>
-			{{#if country}}<p>Country: {{country}}</p>{{/if}}
+			{{#if country}}<p>Country/Region: {{country}}</p>{{/if}}
 			{{#if org}}<p>School/Organization Name: {{org}}</p>{{/if}}
 			{{#if start}}<p>Start Date: {{start}}</p>{{/if}}
 			{{#if end}}<p>End Date: {{end}}</p>{{/if}}
@@ -60,7 +41,8 @@ function showHide(shID) {
 				{{media}}		{{/if}}
 			{{#if resources}}<p>Resources: {{resources}}</p>{{/if}}
 			{{#if admin}}<p>Administrator: {{admin}}</p>{{/if}}
-			{{#if users}}<p>Users: {{users}}</p>{{/if}}
+			{{#if users}}<p>Members: {{users}}</p>{{/if}}
+			{{#if tags}}<p>Tags: {{#each tag in tags}}<span class="comma-list"{{tag.title}}</span>{{/each}}</p>{{/if}}
 			<p><a href="" {{action "hideDetails"}}>(Hide details)</a>
 		</div>
 		</article>
@@ -73,7 +55,7 @@ function showHide(shID) {
 			<div {{bind-attr class="isHidden:unhidden:hidden" }}>
 			
 			<p><a href="" {{action "hideDetails"}}>(Hide details)</a>
-		</div>
+			</div>
 		</article>
   
   </script>
@@ -90,6 +72,7 @@ function showHide(shID) {
   <script src="js/models/project.js"></script>
   <script src="js/controllers/projects_controller.js"></script>
   <script src="js/controllers/project_controller.js"></script>
+
   
 
   </body>
