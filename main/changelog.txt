@@ -1,0 +1,32 @@
+style.css: 
+
+commented out #logo .image position:absolute so it wouldn't overlap heading and byline
+
+commented out #header .top and #header .bottom position:absolute to avoid overlap
+
+added #header overflow-y:auto to add scroll bar when content overflows div
+
+changed strong, b font-weight:300 -> 600, //color
+
+added #learner_profile img{
+height: 200px;}
+
+changed #logo margin: 1.75em 1.5em 1.5em 1.5em;->margin: 1.75em 1em 1.5em 1.5em;
+
+
+
+
+style-mobile.css:
+
+.image.featured
+.image.featured img
+
+
+
+todo:
+
+Courses
+Projects
+Donate
+
+??
