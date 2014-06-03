@@ -1013,7 +1013,8 @@
 				#nav ul li a
 				{
 					display: block;
-					padding: 0.5em 1.5em 0.5em 1.5em;
+					//padding: 0.5em 1.5em 0.5em 1.5em;
+					padding: 0.5em 1.5em 0.5em 0.5em;
 					color: rgba(255,255,255,0.5);
 					text-decoration: none;
 					outline: 0;
@@ -1030,6 +1031,7 @@
 						position: relative;
 						display: block;
 						font-size: 0.8em;
+						padding-right: 2.25em;
 					}
 					
 						#nav ul li a span:before
@@ -1138,7 +1140,32 @@
 		
 		#learner_profile img{
 			height: 200px;
+			
 		}
+		
+		
+		
+/*********************************************************************************/
+/* What We Offer                                                                 */
+/*********************************************************************************/		
+		
+		#workshop{
+			height: 400px;
+			overflow:hidden;
+			position:relative;
+		}
+		
+			#workshop img{
+				margin-top:-75px;
+			}
+		
+		
+		
+		
+		
+		
+		
+		
 		
 		
 		

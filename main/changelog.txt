@@ -23,6 +23,12 @@ style-mobile.css:
 
 
 
+init.js:
+change image computation a lot!
+ - now image is really centered
+ - do this with CSS!!!
+
+
 todo:
 
 Courses
@@ -30,3 +36,67 @@ Projects
 Donate
 
 ??
+
+
+
+
+
+6/3:
+
+Changed DRL Projects to Projects and Partnerships
+
+
+style-narrow
+nav:
+ padding-right 2.25->1.25
+ margin-left -1.25->-0.5
+
+
+style-narrow.css
+
+#nav ul li a
+{
+font-size: 0.8em;
+padding-top: 0.5em;
+padding-bottom: 0.5em;
+padding-right:0.95em;
+}
+
+
+style.css
+#nav ul li a
+
+{
+
+display: block;
+
+//padding: 0.5em 1.5em 0.5em 1.5em;
+
+padding: 0.5em 1.5em 0em 0em;
+
+
+
+
+
+font awesome:
+
+http://astronautweb.co/snippet/font-awesome/
+
+fa-globe (projects, what we offer)
+fa-users (learner profile, what we offer)
+fa-cogs (projects)
+fa-heart-o (action)
+fa-puzzle-piece (learner profile)
+
+fa-briefcase
+fa-pencil
+fa-th-list (projects)
+
+
+fa-linked in
+
+
+
+
+
+

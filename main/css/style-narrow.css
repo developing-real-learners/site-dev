@@ -77,17 +77,22 @@
 					font-size: 0.8em;
 					padding-top: 0.5em;
 					padding-bottom: 0.5em;
+					padding-right:0.95em;
 				}
 				
 					#nav ul li a span
 					{
 						padding-right: 2.25em;
+						//padding-right:1.25em;
+						//padding-right:10%;
 					}
 					
 						#nav ul li a span:before
 						{
 							left: 100%;
 							margin-left: -1.25em;
+							//margin-left: -0.5em;
+							//margin-left: -5%;
 							line-height: 2.25em;
 						}
 
