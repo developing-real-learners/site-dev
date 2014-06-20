@@ -36,7 +36,7 @@
 		.image.featured img
 		{
 			position: relative;
-			//height: 10em;
+			height: 10em;
 			//width: auto;
 			width:100%
 			/*
@@ -49,6 +49,12 @@
 			*/
 		}
 
+		#workshop img{
+				//margin-top:-75px;
+				margin-top:-1em;
+			}
+		
+		
 /*********************************************************************************/
 /* Main                                                                          */
 /*********************************************************************************/
@@ -61,3 +67,8 @@
 		{
 			padding: 2em 0 2em 0;
 		}
+		
+			#main > section.one
+	{
+		padding-bottom:1em;
+	}

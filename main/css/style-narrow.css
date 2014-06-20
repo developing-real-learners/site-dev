@@ -113,3 +113,12 @@
 	{
 		margin-left: 20%;
 	}
+	
+	#main > section.one
+	{
+		padding-bottom:2em;
+	}
+	
+	.item h3 {
+		font-size:0.5em;
+	}
