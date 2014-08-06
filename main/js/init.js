@@ -200,6 +200,7 @@
 
 			var top = jQuery(window), doc = jQuery(document);
 			
+//			top.on( "load onpageshow" , function() { //proved unnecessary!
 			top.load(function() {
 
 				// Settings
@@ -291,6 +292,13 @@
 							{
 								links.removeClass(settings.activeClassName);
 								elements[lastId].link.addClass(settings.activeClassName);
+								//change URL 
+								//window.location.hash = lastId;//success! but only works for scrolling. need links to work too.
+								//actually, it made scrolling weird and choppy!
+								//top.location.hash = lastId; //fail
+								newurl = "index.html#" + lastId;
+								var stateObj = { foo: "bar" };
+								history.pushState(stateObj, "page 2", newurl);
 							}
 					});
 					
@@ -346,7 +354,8 @@
 			jQuery('.scrolly').n33_scrolly();
 
 		// Initialize nav
-			var $nav_a = jQuery('#nav a');
+//			var $nav_a = jQuery('#nav a');
+			var $nav_a = jQuery('#header a'); //works!
 			
 			// Scrollyfy links
 				$nav_a
@@ -355,9 +364,11 @@
 
 						var t = jQuery(this),
 							href = t.attr('href');
+												
 						
 						if (href[0] != '#')
 							return;
+						
 						
 						e.preventDefault();
 						
@@ -368,6 +379,10 @@
 					
 						// Set this link to active
 							t.addClass('active');
+							
+						//set URL
+							window.location.hash = href; //success and debugged!
+							
 					
 					});
 

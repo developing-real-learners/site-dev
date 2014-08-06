@@ -46,6 +46,8 @@ Donate
 Changed DRL Projects to Projects and Partnerships
 
 
+
+
 style-narrow
 nav:
  padding-right 2.25->1.25
@@ -96,7 +98,63 @@ fa-th-list (projects)
 fa-linked in
 
 
+				<!-- Projects -->
+					<section id="projects" class="three">
+						<div class="container">
+
+							<header>
+								<h2>Projects and Partnerships</h2>
+							</header>
+
+							<a href="http://ineedchemicalx.deviantart.com/art/Pasadena-357650036" class="image featured"><img src="images/pic08.jpg" alt="" /></a>
+							
+							<p>Tincidunt eu elit diam magnis pretium accumsan etiam id urna. Ridiculus 
+							ultricies curae quis et rhoncus velit. Lobortis elementum aliquet nec vitae 
+							laoreet eget cubilia quam non etiam odio tincidunt montes. Elementum sem 
+							parturient nulla quam placerat viverra mauris non cum elit tempus ullamcorper 
+							dolor. Libero rutrum ut lacinia donec curae mus vel quisque sociis nec 
+							ornare iaculis.</p>
+
+						</div>
+					</section>
+
+
+Todo:
+"What We Offer" picture scales down badly (cuts off Robert's head!) - use relative measurement/workaround to fix!
+
+
+Make all links go to headings, below banner images!
+Add contact buttons
+Write JS function to autofill form from contact buttons
+Make Developing Real Learners logo in heading a link to top of page
+
+
+Robert wants:
+"There then follows your squares. I am thinking icons are nice but how about an icon that changes into a definition?  I’d like one day for these to be translatable into other languages but I guess we need to stick with English to start with.  
+I might have a go at designing some icons myself as it might be a bit problematic to use someone else’s even if they are free."
+
+
+
+Change "what we offer" to "Services"? "What we do?" "How can we help?"
 
 
 
 
+
+
+
+Proactive icon is least clear
+
+
+Icons:
+ - resizing is not perfect.  When it is in narrow width, the icons are too wide and there is no grey border.  Make the icons have a max width!
+
+URL:
+ - make URL change when changing site sections
+
+Resources:
+ - change reading list/resources page to make it nice!
+
+Nav:
+ - Nav items should expand when "active" and include subsections/links!
+ - Nav should detect which section it is in on page load!
