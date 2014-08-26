@@ -138,8 +138,27 @@ I might have a go at designing some icons myself as it might be a bit problemati
 Change "what we offer" to "Services"? "What we do?" "How can we help?"
 
 
+Code for contact form:
 
-
+<form method="post" action="#">
+								<div class="row half">
+									<div class="6u"><input type="text" class="text" name="name" placeholder="Name" /></div>
+									<div class="6u"><input type="text" class="text" name="email" placeholder="Email" /></div>
+								</div>
+								<div class="row half">
+									<div class="12u"><input type="text" class="text" name="subject" placeholder="Subject" id="contact_subject" /></div>
+								</div>
+								<div class="row half">
+									<div class="12u">
+										<textarea name="message" placeholder="Message"></textarea>
+									</div>
+								</div>
+								<div class="row">
+									<div class="12u">
+										<a href="#" class="button submit">Send Message</a>
+									</div>
+								</div>
+							</form>
 
 
 
@@ -158,3 +177,81 @@ Resources:
 Nav:
  - Nav items should expand when "active" and include subsections/links!
  - Nav should detect which section it is in on page load!
+
+
+ - name changing stuff is causing problems with refresh
+
+
+
+Attributes:
+ - descriptors available on hover
+ - pages available on click
+
+-or-
+ - descriptors available on hover
+ - if no hover, descriptors available on click
+
+
+A Novel Approach:
+ - add a mouse pointer to page
+ - it follows your cursor or finger
+ - it activates hover/other area effects
+ - this defeats standard scroll gesture :(
+
+
+
+
+
+Descriptors available on click
+ - css show/hide technique
+ - find css to make cursor change to link finger
+
+
+expand symbols:
+ &#9660; - big down triangle
+ &#9662; &blacktriangledown; - small down triangle
+&#709; - down carat
+
+
+
+DRL Website Resources:
+http://blog.cloudflare.com/cloudflare-tips-recommended-steps-for-new-use
+http://blog.cloudflare.com/introducing-cname-flattening-rfc-compliant-cnames-at-a-domains-root
+
+popover:
+http://codepen.io/derekpcollins/pen/JCLhG
+http://www.cssflow.com/snippets/animated-profile-popover/demo
+http://stackoverflow.com/questions/12877625/css-popover-menu
+http://dimsemenov.com/plugins/magnific-popup/
+http://codepen.io/dimsemenov/pen/vKrqs
+http://fancyapps.com/fancybox/
+http://www.designtrending.com/index.php/2012/01/jquery-popovers/
+
+
+Email/Contact:
+http://help.website-creator.org/customer/portal/articles/1409304-avoiding-spam-when-posting-an-email-address
+
+
+http://drl.shoutwiki.com/wiki/Real_Learner
+
+
+
+
+Idea: Organization Wiki
+ contains:
+  - page for each term
+   - definitions
+   - discussion
+   - links
+   - exercises/lessons/ideas
+  - page for affiliated organizations
+   - how they develop learners
+   - exercises
+   - links
+   - projects
+  - page for projects
+
+
+
+
+
